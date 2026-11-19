@@ -1,0 +1,36 @@
+/* Removes default browser margins and centers the button in the exact middle of the screen */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a1a2e;
+  font-family: Arial, sans-serif;
+}
+
+/* Styles the kick drum button to look like a bold drum pad */
+.drum-btn {
+  width: 140px;
+  height: 140px;
+  background-color: #e94560;
+  color: #ffffff;
+  border: 4px solid #ffffff;
+  border-radius: 16px;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.1s ease, background-color 0.1s ease;
+}
+
+/* Slightly brightens the button when the mouse hovers over it */
+.drum-btn:hover {
+  background-color: #ff5773;
+}
+
+/* Presses the button inward slightly when clicked to mimic hitting a drum pad */
+.drum-btn:active {
+  transform: scale(0.95);
+}
